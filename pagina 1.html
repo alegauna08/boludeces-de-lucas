@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .image {
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+        }
+        .libro {
+            text-align: center;
+            margin: 10px;
+            display: inline-block;
+        }
+        .boton {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+<body> 
+    <h1>Libros Prohibidos</h1>
+    <p>En esta sección se presentan algunos libros que han sido prohibidos a lo largo de la dictadura por diversas razones, como su contenido controvertido, su crítica social o política, o simplemente por desafiar las normas establecidas. A continuación, se enumeran algunos de los libros más conocidos que han sido censurados.</p>
+    <div class="libro"> 
+        <h1>"La torre de Cubos"</h1>
+        <h2>Autora: Laura Devetach</h2>
+        <img class="image" src="torre de cubos.jpg" alt="">
+        <br>
+        <button class="boton" onclick="">Leer libro</button>
+        <br>
+        <button class="boton" onclick="">Información</button>
+        <br>
+        <button class="boton" onclick="">Razón de la censura</button>
+    </div>
+    <div class="libro">
+        <h2>"Un Elenfante Ocupa</h2>
+        <h2> Mucho Espacio"</h2>
+        <h2>Autora: Elsa Bornemann</h2>
+        <img class="image" src="un elefante ocupa mucho espacio.jpg" alt="">
+        <br>
+        <button class="boton" onclick="">Leer libro</button>
+        <br>
+        <button class="boton" onclick="">Información</button>
+        <br>
+        <button class="boton" onclick="">Razón de la censura</button>
+
+    </div>
+    <div class="libro">
+        <h1>"El año verde"</h1>
+        <h2>Autora: Elsa Bornemann</h2>
+        <img class="image" src="el año verde.jpg" alt="">
+        <br>
+        <button class="boton" onclick="">Leer libro</button>
+        <br>
+        <button class="boton" onclick="">Información</button>
+        <br>
+        <button class="boton" onclick="">Razón de la censura</button>
+    </div>
+
+    <script>
+        onclick = function(event) {
+            if (event.target.classList.contains('boton')) {
+                alert('Funcionalidad en desarrollo');
+            }
+        }
+    </script>
+</body>
+</html>
