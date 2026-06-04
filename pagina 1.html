@@ -30,44 +30,48 @@
     <div class="libro"> 
         <h1>"La torre de Cubos"</h1>
         <h2>Autora: Laura Devetach</h2>
-        <img class="image" src="torre de cubos.jpg" alt="">
+        <img class="image" src="imagenes/la torre de cubos.jpg" alt="">
         <br>
-        <button class="boton" onclick="">Leer libro</button>
+        <button class="boton" onclick="leerLibro('la-torre-de-cubos')">Leer libro</button>
         <br>
-        <button class="boton" onclick="">Información</button>
+        <button class="boton" onclick="mostrarInformacion('La torre de cubos información')">Información</button>
         <br>
-        <button class="boton" onclick="">Razón de la censura</button>
+        <button class="boton" onclick="mostrarRazon('la torre de cubos')">Razón de la censura</button>
     </div>
     <div class="libro">
         <h2>"Un Elenfante Ocupa</h2>
         <h2> Mucho Espacio"</h2>
         <h2>Autora: Elsa Bornemann</h2>
-        <img class="image" src="un elefante ocupa mucho espacio.jpg" alt="">
+        <img class="image" src="imagenes/un elefante ocupa mucho espacio.jpg" alt="">
         <br>
-        <button class="boton" onclick="">Leer libro</button>
+        <button class="boton" onclick="leerLibro('un-elefante-ocupa-mucho-espacio')">Leer libro</button>
         <br>
-        <button class="boton" onclick="">Información</button>
+        <button class="boton" onclick="mostrarInformacion('Un elefante ocupa mucho espacio información')">Información</button>
         <br>
-        <button class="boton" onclick="">Razón de la censura</button>
+        <button class="boton" onclick="mostrarRazon('un elefante ocupa mucho espacio')">Razón de la censura</button>
 
     </div>
     <div class="libro">
         <h1>"El año verde"</h1>
         <h2>Autora: Elsa Bornemann</h2>
-        <img class="image" src="el año verde.jpg" alt="">
+        <img class="image" src="imagenes/el año verde.jpg" alt="">
         <br>
-        <button class="boton" onclick="">Leer libro</button>
+        <button class="boton" onclick="leerLibro('el-año-verde')">Leer libro</button>
         <br>
-        <button class="boton" onclick="">Información</button>
+        <button class="boton" onclick="mostrarInformacion('El año verde información')">Información</button>
         <br>
-        <button class="boton" onclick="">Razón de la censura</button>
+        <button class="boton" onclick="mostrarRazon('el año verde')">Razón de la censura</button>
     </div>
 
     <script>
-        onclick = function(event) {
-            if (event.target.classList.contains('boton')) {
-                alert('Funcionalidad en desarrollo');
-            }
+        function leerLibro(libro) {
+            window.open('pdf/' + libro + '.pdf', '_blank');
+        }
+        function mostrarInformacion(libro) {
+            window.open('informacion/' + libro + '.pdf', '_blank');
+        }
+        function mostrarRazon(libro) {
+            window.open('razones/' + libro + '.html', '_blank');
         }
     </script>
 </body>
