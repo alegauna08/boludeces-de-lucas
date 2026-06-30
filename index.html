@@ -23,10 +23,16 @@
             cursor: pointer;
             margin: 5px;
         }
+        .libro-title {
+            text-align: center;
+        }
+        .libro-description {
+            font-weight: bold;
+        }
     </style>
 <body> 
-    <h1>Libros Prohibidos</h1>
-    <p>En esta sección se presentan algunos libros que han sido prohibidos a lo largo de la dictadura por diversas razones, como su contenido controvertido, su crítica social o política, o simplemente por desafiar las normas establecidas. A continuación, se enumeran algunos de los libros más conocidos que han sido censurados.</p>
+    <h1 class="libro-title">Libros Prohibidos</h1>
+    <h3 class="libro-description">En esta sección se presentan algunos libros que han sido prohibidos a lo largo de la dictadura por diversas razones, como su contenido controvertido, su crítica social o política, o simplemente por desafiar las normas establecidas. A continuación, se enumeran algunos de los libros más conocidos que han sido censurados.</p>
     <div class="libro"> 
         <h1>"La torre de Cubos"</h1>
         <h2>Autora: Laura Devetach</h2>
@@ -61,6 +67,53 @@
         <button class="boton" onclick="mostrarInformacion('El año verde información')">Información</button>
         <br>
         <button class="boton" onclick="mostrarRazon('el año verde')">Razón de la censura</button>
+    </div>
+    <div class="libro">
+        <h1>"Caso Gaspar"</h1>
+        <h2>Autora: Elsa Bornemann</h2>
+        <img class="image" src="imagenes/caso gaspar.jpg" alt="">
+        <br>
+        <button class="boton" onclick="leerLibro('el-caso-gaspar')">Leer libro</button>
+        <br>
+        <button class="boton" onclick="mostrarInformacion('Caso Gaspar información')">Información</button>
+        <br>
+        <button class="boton" onclick="mostrarRazon('caso gaspar')">Razón de la censura</button>
+    </div>
+    <div class="libro">
+        <h2>"El pueblo que no</h2>
+        <h2>quería ser gris"</h2>
+        <h2>Autores: Beatriz Doumerc</h2>
+        <h2>y Ayax Bernes</h2>
+        <img class="image" src="imagenes/el pueblo que no quería ser gris.jpg" alt="">
+        <br>
+        <button class="boton" onclick="leerLibro('el-pueblo-que-no-quería-ser-gris')">Leer libro</button>
+        <br>
+        <button class="boton" onclick="mostrarInformacion('El Pueblo que no quería ser gris información')">Información</button>
+        <br>
+        <button class="boton" onclick="mostrarRazon('el pueblo que no quería ser gris')">Razón de la censura</button>
+    </div>
+    <div class="libro">
+        <h1>"Monigote en la arena"</h1>
+        <h2>Autora: Laura Devetach</h2>
+        <img class="image" src="imagenes/monigote en la arena.jpg" alt="">
+        <br>
+        <button class="boton" onclick="leerLibro('monigote-en-la-arena')">Leer libro</button>
+        <br>
+        <button class="boton" onclick="mostrarInformacion('Monigote en la arena información')">Información</button>
+        <br>
+        <button class="boton" onclick="mostrarRazon('monigote en la arena')">Razón de la censura</button>
+    </div>
+    <div class="libro">
+        <h1>"Mocho y</h1>
+        <h1>el Espantapájaros"</h1>
+        <h2>Autor: Álvaro Yunque</h2>
+        <img class="image" src="imagenes/mocho y el espantapájaros.jpg" alt="">
+        <br>
+        <button class="boton" onclick="leerLibro('mocho-y-el-espantapájaros')">Leer libro</button>
+        <br>
+        <button class="boton" onclick="mostrarInformacion('Mocho y el espantapájaros información')">Información</button>
+        <br>
+        <button class="boton" onclick="mostrarRazon('mocho y el espantapájaros')">Razón de la censura</button>
     </div>
 
     <script>

@@ -1,0 +1,17 @@
+.body {
+    margin: 0;
+    padding: 20px;
+    font-family: times new roman, sans-serif;
+}
+.title {
+    text-align: center;
+    margin: 20px;
+}
+h2, h3 {
+    margin: 20px;
+}
+p {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+}
